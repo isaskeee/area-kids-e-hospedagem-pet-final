@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Recreativa Infantil e Hospedagem Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+ 
+    
+<!--Criação dos Títulos Iniciais e das primeiras Divs-->
+<div class="backtituloisa">
+    <div class="tituloprincisa">
+        <h1>🎈Área Recreativa Infantil🎈</h1>
+    </div>
+    <p>No hotel Vista Serena, sabemos o quanto é importante para os pais ter um espaço seguro e divertido para seus filhos. Nossa área recreativa Kids foi projetada com muito carinho, oferecendo diversas atividades que vão encantar a garotada. Com equipamentos de última geração, brinquedos interativos e monitores qualificados, garantimos que suas crianças terão momentos de pura alegria e diversão.
+
+      As crianças poderão explorar um parque temático repleto de escorregadores, piscinas de bolinhas e áreas para jogos. Além disso, oferecemos oficinas de arte, contação de histórias e atividades esportivas, promovendo a socialização e o aprendizado de forma lúdica.
+      
+      Enquanto seus pequenos se divertem, você pode relaxar à beira da piscina ou desfrutar de um dos nossos tratamentos no spa. O Vista Serena foi pensado para atender a toda a família, garantindo que cada membro tenha uma experiência inesquecível.</p>
+</div>
+
+<!-- Introdução ao espaço kids -->
+<div class="backintroisa"> 
+    <div class="introisa">
+        <h2>Introdução.</h2>
+    </div>
+    <p>
+        Bem-vindos à nossa <strong>Área Recreativa Infantil!</strong> Pensada para garantir momentos de diversão e segurança, 
+        nosso espaço é ideal para crianças de todas as idades.
+    </p>
+    <p>
+        Com uma variedade de brinquedos, jogos interativos e atividades ao ar livre, 
+        aqui as crianças podem <em>explorar, aprender e se divertir em um ambiente acolhedor e supervisionado.</em>
+    </p>
+    <p>
+        A diversão está garantida para os pequenos, enquanto os 
+        pais relaxam com tranquilidade!
+    </p>
+</div>
+
+<!-- Galeria de fotos -->
+<div class="galeriaisa">
+    <h2>Confira abaixo a galeria de fotos da nossa Área Kids.</h2>
+</div>
+
+<!--Criação do slideshow-->
+<div class="backgroundslideisa">
+    <div class="slideshow-containerisa">
+
+        <div class="mySlides fadeisa">
+            <div class="numbertext">1 / 4</div>
+            <img src="../imagens/37.jpg" style="width: 100%">
+            <div class="text" style="color: black;">Foto Demonstrativa do interior da nossa Área Kids</div>
+        </div>
+
+        <div class="mySlides fadeisa">
+            <div class="numbertext">2 / 4</div>
+            <img src="../imagens/38.jpg" style="width: 100%">
+            <div class="text" style="color: black;">Foto da visão geral dos brinquedos que a Área possui</div>
+        </div>
+
+        <div class="mySlides fadeisa">
+            <div class="numbertext">3 / 4</div>
+            <img src="../imagens/36.jpg" style="width: 100%">
+            <div class="text" style="color: black;">Foto destacada dos brinquedos da Área</div>
+        </div>
+
+        <div class="mySlides fadeisa">
+            <div class="numbertext">4 / 4</div>
+            <img src="../imagens/wp-1618880391322-1024x683.jpg" style="width: 100%;">
+            <div class="text" style="color: black;">Foto da parte externa da nossa Área Kids</div>
+        </div>
+
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+</div>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+<!-- Criação da área de Hospedagem Pet -->
+<div class="pettituloisa">
+    <h3>
+        E para você que tem um animalzinho de estimação, também possuímos uma área pensada em você!
+    </h3>
+</div>
+
+<div class="petisa">
+    <div class="titulopetisa">
+        <h2>
+          🐶🐱Área de Hospedagem Pet🐶🐱
+        </h2>
+    </div>
+    <div class="petparagrafosisa">
+        <p >A área de Hospedagem Pet do hotel é um espaço dedicado ao conforto e bem-estar dos animais de estimação.</p>
+        <p>Com acomodações seguras e aconchegantes, os pets têm à disposição camas confortáveis, brinquedos e ambiente climatizado. Os cuidados incluem alimentação balanceada, passeios diários e supervisão constante por profissionais treinados.</p>
+        <p>O hotel oferece ainda serviços personalizados, como banho e tosa, garantindo uma estadia relaxante e divertida para os animais, enquanto seus donos aproveitam suas viagens com tranquilidade.</p> 
+    </div>
+</div>
+
+<!-- Legenda confira algumas fotos -->
+<div class="galeriapetisa">
+    <h5>Confira abaixo a galeria de fotos da nossa Área de Hospedagem Pet.</h5>
+</div>
+
+<!-- Criação do segundo slideshow -->
+<!-- As 04 colunas -->
+<div class="rowisas">
+    <div class="columnisas">
+        <img src="../imagens/pets1.jpg" alt="Foto dos pets dos nossos clientes se divertindo" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="columnisas">
+        <img src="../imagens/pets2.jpg" alt="Foto da nossa Área Externa Pet" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="columnisas">
+        <img src="../imagens/pets3.jpg" alt="Fotos dos pets juntamente com a tutora" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="columnisas">
+        <img src="../imagens/pets4.jpg" alt="Foto ampliada dos pets na Área Externa" style="width:100%" onclick="myFunction(this);">
+    </div>
+</div>
+  
+<div class="containerisas">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+</div>
+  
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
